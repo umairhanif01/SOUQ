@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationView" customModule="SOUQ" customModuleProvider="target">
+            <connections>
+                <outlet property="statusBarBGView" destination="MlM-MH-moM" id="xvJ-ev-dqR"/>
+                <outlet property="titleLbl" destination="hc6-CO-Zt8" id="Zgh-e7-DDf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="522" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MlM-MH-moM">
+                    <rect key="frame" x="0.0" y="0.0" width="522" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="wvI-Fx-C8e"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiu-7v-yFO">
+                    <rect key="frame" x="16" y="44" width="490" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZY-yc-OMp">
+                            <rect key="frame" x="0.0" y="17" width="17" height="22"/>
+                            <state key="normal" image="NavigationMenuLines"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ods-7y-Yo2">
+                            <rect key="frame" x="33" y="17" width="15" height="22"/>
+                            <state key="normal" image="NavigationBellIcon"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download your ad for free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-CO-Zt8">
+                            <rect key="frame" x="142" y="18" width="206.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" red="0.031372549019607843" green="0.25098039215686274" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtm-h7-fhr">
+                            <rect key="frame" x="456.5" y="17" width="17.5" height="22"/>
+                            <state key="normal" image="NavigationDownloadIcon"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="ods-7y-Yo2" firstAttribute="centerY" secondItem="kiu-7v-yFO" secondAttribute="centerY" id="2ye-qs-gan"/>
+                        <constraint firstItem="ods-7y-Yo2" firstAttribute="leading" secondItem="MZY-yc-OMp" secondAttribute="trailing" constant="16" id="3Ax-e0-hOX"/>
+                        <constraint firstAttribute="trailing" secondItem="Wtm-h7-fhr" secondAttribute="trailing" constant="16" id="9av-l7-gJ4"/>
+                        <constraint firstItem="MZY-yc-OMp" firstAttribute="centerY" secondItem="kiu-7v-yFO" secondAttribute="centerY" id="Fs6-MA-Zkz"/>
+                        <constraint firstItem="hc6-CO-Zt8" firstAttribute="centerY" secondItem="kiu-7v-yFO" secondAttribute="centerY" id="I1M-1v-t4N"/>
+                        <constraint firstItem="Wtm-h7-fhr" firstAttribute="centerY" secondItem="kiu-7v-yFO" secondAttribute="centerY" id="YoN-K6-DKN"/>
+                        <constraint firstItem="hc6-CO-Zt8" firstAttribute="centerX" secondItem="kiu-7v-yFO" secondAttribute="centerX" id="qI0-Oy-a7r"/>
+                        <constraint firstItem="MZY-yc-OMp" firstAttribute="leading" secondItem="kiu-7v-yFO" secondAttribute="leading" id="rvu-Xq-0Sv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="MlM-MH-moM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Gn7-JP-Hga"/>
+                <constraint firstItem="kiu-7v-yFO" firstAttribute="top" secondItem="MlM-MH-moM" secondAttribute="bottom" id="IOv-TH-opz"/>
+                <constraint firstItem="MlM-MH-moM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Zbt-CU-FeZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kiu-7v-yFO" secondAttribute="trailing" constant="16" id="dvb-Gy-b9r"/>
+                <constraint firstItem="kiu-7v-yFO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ocM-Xn-eze"/>
+                <constraint firstItem="MlM-MH-moM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qZA-n7-JBd"/>
+                <constraint firstItem="kiu-7v-yFO" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qdp-Lq-tqO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="206.40000000000001" y="-279.76011994002999"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NavigationBellIcon" width="15" height="17.5"/>
+        <image name="NavigationDownloadIcon" width="17.5" height="17.5"/>
+        <image name="NavigationMenuLines" width="17" height="18"/>
+    </resources>
+</document>
